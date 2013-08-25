@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Hola</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button">About</a>
+                        </li>
+                        <li>
+                            <a data-role="button">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <span>Que tan buena esta la aplicación?</span>
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input type="radio" id="radio1" name="radio1" checked="checked">
+                    <label for="radio1">Mal</label>
+                    <input type="radio" id="radio2" name="radio1">
+                    <label for="radio2">Mas o menos</label>
+                    <input type="radio" id="radio3" name="radio1">
+                    <label for="radio3">Bien</label>
+                </fieldset>
+            </div>
+            <div data-role="footer">
+                <h1>Adios</h1>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>About</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <span>Esta es una aplicacion de prueba</span>
+                </div>
+                <a data-role="button">Regresar</a>
+            </div>
+            <div data-role="footer">
+                <h1>santistebanc</h1>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <h1>About</h1>
+            </div>
+            <div data-role="content">
+                <form action="http://" method="POST">
+                    <div data-role="fieldcontain">
+                        <label for="text1">Nombre</label>
+                        <input type="text" id="text1">
+                    </div>
+                    <textarea></textarea>
+                    <select data-native-menu="false">
+                        <option value="Value">Bueno</option>
+                        <option value="Value">Mas o menos</option>
+                        <option value="Value">Malo</option>
+                    </select>
+                </form>
+                <a data-role="button">Regresar</a>
+            </div>
+            <div data-role="footer">
+                <h1>santistebanc</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
